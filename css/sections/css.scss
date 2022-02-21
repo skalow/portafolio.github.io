@@ -1,0 +1,542 @@
+@font-face {
+    font-family: $tipografia-1;
+    src: url("../fonts/KeepCalm-Medium.ttf");
+}
+@font-face {
+    font-family: $tipografia-2;
+    src: url("../fonts/Gotham-Light.otf");
+}
+@font-face {
+    font-family: $tipografia-3;
+    src: url("../fonts/GothamMedium.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: $font-normal-size;
+    background-color: $body-bg-color;
+    color: $tipography-color;
+}
+
+.txt-center{
+    text-align: center;
+}
+.txt-size{
+    font-family: "gotham-light";
+    color: gray;
+}
+.txt-size.min{
+    font-size: $font-normal-size;
+    line-height: 1.6;
+}
+.txt-size.ch{
+    font-size: $font-normal-size; 
+    line-height: 2;
+    letter-spacing: 2px; 
+}
+.txt-size.med{
+    font-size: $font-h2;
+}
+.txt-size.ch.bold{
+    font-family: "gotham-medium";
+    font-size: $font-h2;
+}
+.txt-size.gde{
+    font-family: "keep-calm";
+    font-size: $font-h2; 
+}
+
+/* -------- Header -------- */
+header{
+    max-width: 100%;
+    background-color: $header-bg;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding: 2em 0 2em 0;
+    .menu{
+        color: $header-color-font;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+        font-size: $font-h1;
+        font-weight: bold;
+        margin: 0 auto;
+        a{
+            text-decoration: none;
+            text-transform: none;
+            font-style: normal;
+            padding-right: $font-h1;
+            &:visited{
+                color: $header-color-font;
+            }
+        }
+        div{
+            padding: 10px;
+            cursor: pointer;
+            &:hover{
+                color: $header-color-font-secondary;
+                transition: .4s;
+            }
+        }
+    }
+    .social-icons{
+        text-align: center;
+        ul{
+            padding: 0;
+        }
+    }
+    .special{
+        background-image: none;
+        background-size: none;
+
+    }
+}
+
+/* -------- Header -------- */
+
+/* -------- Grid -------- */
+.wall{
+    position: relative;
+    text-align: center;
+    color: $tipography-color;
+    margin: 0 auto 50px auto;
+    max-width: 1500px;
+    min-height: 140vh;
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 40% 60% 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "brick-1 brick-4 brick-4"
+        "brick-2 brick-4 brick-4"
+        "brick-3 brick-5 brick-5"
+        "brick-6 brick-6 brick-6";
+}
+/* -------- Grid -------- */
+
+/* -------- Párrafos a la derecha -------- */
+
+.p-right{
+    span{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            background-color: $tipography-color;
+            right: 0;
+            bottom: -10px;
+        }
+    }
+    p{
+        position: absolute;
+        font-size: $font-normal-size;
+        max-width: 80%;
+        text-align: right;
+        top: 100px;
+        right: 20px;
+    }
+}
+/* -------- Párrafos a la derecha -------- */
+
+/* -------- Párrafos a la izquierda -------- */
+.p-left span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+}
+.p-left span::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: $tipography-color;
+    left: 5px;
+    bottom: -10px;
+}
+.p-left p{
+    position: absolute;
+    font-size: 14px;
+    max-width: 80%;
+    text-align: left;
+    top: 65px;
+    left: 20px;
+}
+/* -------- Párrafos a la izquierda -------- */
+
+/* -------- Botones -------- */
+.bot-right{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: $menu-bg;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    color: $tipography-color;
+    transition: .3s;
+}
+.bot-right:hover{
+    background-color: $hover-bg;
+    transition: .3s;
+    padding: 5px 10px 5px 50px;
+}
+.bot-left{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: $menu-bg;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    color: $tipography-color;
+    transition: .3s;
+}
+.bot-left:hover, .bot-top:hover{
+    background-color: $hover-bg;
+    transition: .3s;
+    padding: 5px 50px 5px 10px;
+}
+.bot-top{
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    background-color: $menu-bg;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    color: $tipography-color;
+    transition: .3s;
+}
+/* -------- Botones -------- */
+
+.brick-1{
+    position: relative;
+    grid-area: brick-1;
+    background-image: $s-i-1;    
+    background-size: cover;
+    div{
+        text-align: right;
+        position: absolute;
+        background-color: $brick-containt;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        transition: .3s;
+    }
+}
+.brick-2{
+    grid-area: brick-2;
+    position: relative;
+    background-image: $s-i-2;    
+    background-size: cover;
+    div{
+        text-align: right;
+        position: absolute;
+        background-color: $brick-containt;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        transition: .3s;
+    }
+}
+.brick-3{
+    grid-area: brick-3;
+    position: relative;
+    background-image: $s-i-3;    
+    background-size: cover;
+    div{
+        position: absolute;
+        background-color: $brick-containt;
+        width: 40%;
+        height: 100%;
+        left: 0;
+        transition: .3s;
+    }
+}
+.brick-4{
+    grid-area: brick-4;
+    position: relative;
+    background-image: $s-i-4;
+    background-size: cover;
+    div{
+        position: absolute;
+        background-color: $brick-containt;
+        width: 100%;
+        height: 170px;
+        top: 0;
+        transition: .3s;
+    }
+}
+.brick-5{
+    grid-area: brick-5;
+    position: relative;
+    background-image: $s-i-5;
+    background-size: cover;
+    div{
+        position: absolute;
+        background-color: $brick-containt;
+        width: 270px;
+        height: 100%;
+        left: 0;
+        transition: .3s;
+    }
+}
+.brick-6{
+    grid-area: brick-6;
+    position: relative;
+    background-image: $s-i-6;
+    background-size: cover;
+    div{
+        position: absolute;
+        background-color: $brick-containt;
+        width: 40%;
+        height: 100%;
+        left: 0;
+        transition: .3s;
+    }
+}
+.brick-1 div:hover, .brick-2 div:hover,
+.brick-3 div:hover, .brick-4 div:hover,
+.brick-5 div:hover{
+    background-color: $brick-hover;
+    transition: .3s;
+}
+.media{
+    li{
+        display: inline-block;
+            font-size: 20px;
+    padding: 0 30px 0 10px;
+        a{
+            position: relative; 
+            display: block;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 63px;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #666;
+            transition: .5s;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: $tipography-color;
+                transition: .5s;
+                transform: scale(.9);
+                z-index: -1;
+            }
+            &:hover{
+                color: $header-color-font;
+            }
+        }
+        .material-icons{
+            font-size: 30px;
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+/* -------- Media Mobile -------- */
+@media (max-width:1000px){
+    .blog-text{
+        padding: 1em;
+    }
+    .txt-size.ch.bold{
+        font-family: "gotham-medium";
+        font-size: $font-normal-size;
+    }
+    .txt-size.med{
+        font-size: $font-normal-size;
+    }
+    .titular{
+        padding: 1em;
+        font-size: $font-x-small-size!important;
+    }
+    .blog-a{
+        font-size: $font-x-small-size;
+    }
+    .menu{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.1em;
+        a{
+            text-decoration: none;
+        }
+    }
+    .menu div{
+        padding: 20px;
+    }
+    .wall{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 300px);
+        grid-template-areas: 
+            "brick-1"
+            "brick-2"
+            "brick-3"
+            "brick-4"
+            "brick-5"
+            "brick-6";
+    }
+    .wall>div>div{
+        width: 40vw;
+    }
+    .brick-4 div{
+        height: 100%;
+        left: 0;
+    }
+    .bot-top{
+        top: 255px;
+        font-size: 24px;
+        padding: 6px 10px 6px 10px;
+    }
+    .bot-left{
+        font-size: 24px;
+        padding: 6px 10px 6px 10px;
+    }
+    .bot-right{
+        font-size: 24px;
+        padding: 6px 10px 6px 10px;
+    }
+    .p-right{
+        span{
+            font-size: 16px;
+        }
+        p{
+            top: 75px;
+            font-size: $font-small-size;
+        }
+    }
+    .p-left{
+        span{
+            font-size: 16px;
+        }
+    }
+    .media{
+        li{
+           font-size: $font-normal-size;
+            padding: 0 0 0 10px;
+            a{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: $font-normal-size;
+                .material-icons{
+                    font-size: 16px!important;
+                }
+            }
+        }
+    }
+}
+/* -------- Media Small Screen -------- */
+@media (max-width:664px){
+    header{
+        .menu{
+            font-size: $font-h2;
+            font-weight: bold;
+        }
+    }
+    .dos-imagenes{
+        display: inline;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1, 2fr);
+        grid-gap: 2em;
+        grid-template-areas: 
+        "img-1"
+        "img-2";
+        img{
+            width: 100%;
+        }
+    }
+    .info-derecha{
+       padding-left: 2em; 
+       overflow: hidden;
+    }
+    .descripcion{
+        padding: 0 2em 0 2em;
+    }
+    header{
+
+        margin: 0;
+    }
+    .presentation{
+        width: 100vw;
+        //background-color: $footer-bg;
+    }
+    .wall>div>div{
+        width: 50vw;
+    }
+    .brick-4 div{
+        height: 100%;
+        left: 0;
+    }
+    .bot-top{
+        top: 155px;
+    }
+    .info{
+        display: grid;
+        grid-gap: 0.2rem;
+        grid-template-columns: 100% 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "brick-1"
+            "brick-2";
+            .descripcion{
+                border-right: none;
+            }
+    }
+    .section-a{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, 400px);
+        grid-template-areas: 
+            "sa-1"
+            "sa-2"
+            "sa-3"
+            "sa-4"
+            "sa-5"
+            "sa-6"
+            "sa-7";
+    }
+    .section-c{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9, 400px);
+        grid-template-areas: 
+            "sa-1"
+            "sa-2"
+            "sa-3"
+            "sa-4"
+            "sa-5"
+            "sa-6"
+            "sa-7"
+            "sa-8"
+            "sa-9";
+    }
+    .section-d{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 400px);
+        grid-template-areas: 
+            "sa-1"
+            "sa-2"
+            "sa-3"
+            "sa-4"
+            "sa-5"
+            "sa-6";
+    }
+}
+
+/* -------- Media Small Screen -------- */
