@@ -797,8 +797,8 @@ header .special {
 
   .section-c {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 400px);
-    grid-template-areas: "sa-1" "sa-2" "sa-3" "sa-4" "sa-5" "sa-6" "sa-7" "sa-8" "sa-9";
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: "sa-1" "sa-2" "sa-3" "sa-4" "sa-5";
   }
 
   .section-d {
