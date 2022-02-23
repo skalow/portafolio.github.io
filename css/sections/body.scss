@@ -1,11 +1,11 @@
-/* -------- Section-b -------- */
+/* -------- Section-C -------- */
 .section-c{
     position: relative;
     max-width: 1500px;
     display: grid;
     color: $tipography-color;
     margin: 0 auto;
-    grid-gap: 4em;
+    grid-gap: 2em;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:repeat(2,400px);
     grid-template-areas: 
@@ -55,63 +55,79 @@
         text-align: left;
     }
 }
-.sc-1{
+.s-card{
     position: relative;
-    background-image: $s-3-1;
     background-size: cover;
+}
+.sc-1{
+    background-image: $s-1;
 }
 .sc-2{
-    position: relative;
-    background-image: $s-3-2;
-    background-size: cover;
+    background-image: $s-2;
 }
 .sc-3{
-    position: relative;
-    background-image: $s-3-3;
-    background-size: cover;
+    background-image: $s-3;
 }
 .sc-4{
-    position: relative;
-    background-image: $s-3-4;
-    background-size: cover;
+    background-image: $s-4;
 }
 .sc-5{
-    position: relative;
-    background-image: $s-3-5;
-    background-size: cover;
+    background-image: $s-5;
 }
 .sc-6{
-    position: relative;
-    background-image: $s-3-6;
-    background-size: cover;
+    background-image: $s-6;
 }
 .sc-7{
-    position: relative;
-    background-image: $s-3-7;
-    background-size: cover;
+    background-image: $s-7;
 }
 .sc-8{
-    position: relative;
-    background-image: $s-3-8;
-    background-size: cover;
+    background-image: $s-8;
 }
 .sc-9{
-    position: relative;
-    background-image: $s-3-9;
-    background-size: cover;
+    background-image: $s-9;
 }
 .sc-10{
-    position: relative;
-    background-image: $s-3-10;
-    background-size: cover;
+    background-image: $s-10;
 }
 .sc-11{
-    position: relative;
-    background-image: $s-3-11;
-    background-size: cover;
+    background-image: $s-11;
 }
 .sc-12{
-    position: relative;
-    background-image: $s-3-12;
-    background-size: cover;
+    background-image: $s-12;
+}
+.sc-13{
+    background-image: $s-13;
+}
+.sc-14{
+    background-image: $s-14;
+}
+.sc-15{
+    background-image: $s-15;
+}
+.sc-16{
+    background-image: $s-16;
+}
+.sc-17{
+    background-image: $s-17;
+}
+.sc-18{
+    background-image: $s-18;
+}
+.sc-19{
+    background-image: $s-19;
+}
+.sc-20{
+    background-image: $s-20;
+}
+.sc-21{
+    background-image: $s-21;
+}
+.sc-22{
+    background-image: $s-22;
+}
+.sc-23{
+    background-image: $s-23;
+}
+.sc-24{
+    background-image: $s-24;
 }

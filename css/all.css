@@ -1,12 +1,7 @@
 @charset "UTF-8";
 /*Fuentes*/
 /*Colores*/
-/* Imagenes */
-/* Index */
-/* Seccion 1*/
-/* Seccion 2*/
-/* Seccion 3*/
-/* Seccion 4*/
+/* Portfolio imagenes*/
 /* -------- Blog Body -------- */
 .titular {
   padding: 0 2em;
@@ -147,14 +142,14 @@
   list-style: none;
 }
 
-/* -------- Section-b -------- */
+/* -------- Section-C -------- */
 .section-c {
   position: relative;
   max-width: 1500px;
   display: grid;
   color: #bbbbbb;
   margin: 0 auto;
-  grid-gap: 4em;
+  grid-gap: 2em;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 400px);
   grid-template-areas: "sa-1 sa-2 sa-3" "sa-4 sa-5 sa-6" "sa-7 sa-8 sa-9";
@@ -202,76 +197,105 @@
   text-align: left;
 }
 
-.sc-1 {
+.s-card {
   position: relative;
-  background-image: url(../images/cem/tablero-cem.jpg);
   background-size: cover;
+}
+
+.sc-1 {
+  background-image: url(../images/cem/tablero-cem.jpg);
 }
 
 .sc-2 {
-  position: relative;
   background-image: url(../images/cem-login/login-cem-1.jpg);
-  background-size: cover;
 }
 
 .sc-3 {
-  position: relative;
   background-image: url(../images/siu/siu-mama-2.jpg);
-  background-size: cover;
 }
 
 .sc-4 {
-  position: relative;
   background-image: url(../images/lista-espera/analiticas-tematic-1.jpg);
-  background-size: cover;
 }
 
 .sc-5 {
-  position: relative;
   background-image: url(../images/medterial/medterial-1.jpg);
-  background-size: cover;
 }
 
 .sc-6 {
-  position: relative;
   background-image: url(../images/recuadros/working.jpg);
-  background-size: cover;
 }
 
 .sc-7 {
-  position: relative;
   background-image: url(../images/alta-seller/D1.0.1.png);
-  background-size: cover;
 }
 
 .sc-8 {
-  position: relative;
   background-image: url(../images/checkout-mp/checkout.jpg);
-  background-size: cover;
 }
 
 .sc-9 {
-  position: relative;
   background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
-  background-size: cover;
 }
 
 .sc-10 {
-  position: relative;
-  background-image: url(../images/recuadros/working.jpg);
-  background-size: cover;
+  background-image: url(../images/feed-producto/1.8Home.jpg);
 }
 
 .sc-11 {
-  position: relative;
   background-image: url(../images/recuadros/working.jpg);
-  background-size: cover;
 }
 
 .sc-12 {
-  position: relative;
   background-image: url(../images/recuadros/working.jpg);
-  background-size: cover;
+}
+
+.sc-13 {
+  background-image: url(../images/alta-seller/D1.0.1.png);
+}
+
+.sc-14 {
+  background-image: url(../images/checkout-mp/checkout.jpg);
+}
+
+.sc-15 {
+  background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
+}
+
+.sc-16 {
+  background-image: url(../images/recuadros/working.jpg);
+}
+
+.sc-17 {
+  background-image: url(../images/recuadros/working.jpg);
+}
+
+.sc-18 {
+  background-image: url(../images/recuadros/working.jpg);
+}
+
+.sc-19 {
+  background-image: url(../images/alta-seller/D1.0.1.png);
+}
+
+.sc-20 {
+  background-image: url(../images/checkout-mp/checkout.jpg);
+}
+
+.sc-21 {
+  background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
+}
+
+.sc-22 {
+  background-image: url(../images/recuadros/working.jpg);
+}
+
+.sc-23 {
+  background-image: url(../images/recuadros/working.jpg);
+}
+
+.sc-24 {
+  background-image: url(../images/recuadros/working.jpg);
 }
 
 @font-face {
@@ -448,155 +472,6 @@ header .special {
 }
 
 /* -------- Párrafos a la izquierda -------- */
-/* -------- Botones -------- */
-.bot-right {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  background-color: #11ac33;
-  border: none;
-  padding: 5px 10px 5px 10px;
-  cursor: pointer;
-  color: #bbbbbb;
-  transition: 0.3s;
-}
-
-.bot-right:hover {
-  background-color: #58da6c;
-  transition: 0.3s;
-  padding: 5px 10px 5px 50px;
-}
-
-.bot-left {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  background-color: #11ac33;
-  border: none;
-  padding: 5px 10px 5px 10px;
-  cursor: pointer;
-  color: #bbbbbb;
-  transition: 0.3s;
-}
-
-.bot-left:hover, .bot-top:hover {
-  background-color: #58da6c;
-  transition: 0.3s;
-  padding: 5px 50px 5px 10px;
-}
-
-.bot-top {
-  position: absolute;
-  left: 20px;
-  top: 120px;
-  background-color: #11ac33;
-  border: none;
-  padding: 5px 10px 5px 10px;
-  cursor: pointer;
-  color: #bbbbbb;
-  transition: 0.3s;
-}
-
-/* -------- Botones -------- */
-.brick-1 {
-  position: relative;
-  grid-area: brick-1;
-  background-image: url(../images/recuadros/login-sis.jpg);
-  background-size: cover;
-}
-.brick-1 div {
-  text-align: right;
-  position: absolute;
-  background-color: #0000009d;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  transition: 0.3s;
-}
-
-.brick-2 {
-  grid-area: brick-2;
-  position: relative;
-  background-image: url(../images/recuadros/universidad-sd.jpg);
-  background-size: cover;
-}
-.brick-2 div {
-  text-align: right;
-  position: absolute;
-  background-color: #0000009d;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  transition: 0.3s;
-}
-
-.brick-3 {
-  grid-area: brick-3;
-  position: relative;
-  background-image: url(../images/recuadros/siu-web.jpg);
-  background-size: cover;
-}
-.brick-3 div {
-  position: absolute;
-  background-color: #0000009d;
-  width: 40%;
-  height: 100%;
-  left: 0;
-  transition: 0.3s;
-}
-
-.brick-4 {
-  grid-area: brick-4;
-  position: relative;
-  background-image: url(../images/recuadros/rediseño-sis.jpg);
-  background-size: cover;
-}
-.brick-4 div {
-  position: absolute;
-  background-color: #0000009d;
-  width: 100%;
-  height: 170px;
-  top: 0;
-  transition: 0.3s;
-}
-
-.brick-5 {
-  grid-area: brick-5;
-  position: relative;
-  background-image: url(../images/recuadros/tablero-cem.jpg);
-  background-size: cover;
-}
-.brick-5 div {
-  position: absolute;
-  background-color: #0000009d;
-  width: 270px;
-  height: 100%;
-  left: 0;
-  transition: 0.3s;
-}
-
-.brick-6 {
-  grid-area: brick-6;
-  position: relative;
-  background-image: url(../images/recuadros/medterial.jpg);
-  background-size: cover;
-}
-.brick-6 div {
-  position: absolute;
-  background-color: #0000009d;
-  width: 40%;
-  height: 100%;
-  left: 0;
-  transition: 0.3s;
-}
-
-.brick-1 div:hover, .brick-2 div:hover,
-.brick-3 div:hover, .brick-4 div:hover,
-.brick-5 div:hover {
-  background-color: rgba(0, 21, 34, 0.692);
-  transition: 0.3s;
-}
-
 .media li {
   display: inline-block;
   font-size: 20px;
