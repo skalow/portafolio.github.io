@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Fuentes*/
+/*Fuentes y tamaños*/
 /*Colores*/
 /* Portfolio imagenes*/
 /* -------- Blog Body -------- */
@@ -143,7 +143,7 @@
 }
 
 /* -------- Section-C -------- */
-.section-c {
+.section {
   position: relative;
   max-width: 1500px;
   display: grid;
@@ -154,13 +154,13 @@
   grid-template-rows: repeat(2, 400px);
   grid-template-areas: "sa-1 sa-2 sa-3" "sa-4 sa-5 sa-6" "sa-7 sa-8 sa-9";
 }
-.section-c h1 {
+.section h1 {
   font-size: 24px;
   text-align: center;
   padding-bottom: 20px;
   border-bottom: solid 2px #fff;
 }
-.section-c div a {
+.section div a {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -203,23 +203,23 @@
 }
 
 .sc-1 {
-  background-image: url(../images/cem/tablero-cem.jpg);
+  background-image: url(../images/cem/portada.jpg);
 }
 
 .sc-2 {
-  background-image: url(../images/cem-login/login-cem-1.jpg);
+  background-image: url(../images/medterial/portada.jpg);
 }
 
 .sc-3 {
-  background-image: url(../images/siu/siu-mama-2.jpg);
+  background-image: url(../images/siu/portada.jpg);
 }
 
 .sc-4 {
-  background-image: url(../images/lista-espera/analiticas-tematic-1.jpg);
+  background-image: url(../images/lista-espera/portada.jpg);
 }
 
 .sc-5 {
-  background-image: url(../images/medterial/medterial-1.jpg);
+  background-image: url(../images/cem-login/portada.png);
 }
 
 .sc-6 {
@@ -227,15 +227,15 @@
 }
 
 .sc-7 {
-  background-image: url(../images/alta-seller/D1.0.1.png);
+  background-image: url(../images/alta-seller/portada.png);
 }
 
 .sc-8 {
-  background-image: url(../images/checkout-mp/checkout.jpg);
+  background-image: url(../images/checkout-mp/portada.jpg);
 }
 
 .sc-9 {
-  background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
+  background-image: url(../images/detalle-producto/portada.png);
 }
 
 .sc-10 {
@@ -243,59 +243,59 @@
 }
 
 .sc-11 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/correos-transaccionales/portada.jpg);
 }
 
 .sc-12 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/coppel-kids/portada.jpg);
 }
 
 .sc-13 {
-  background-image: url(../images/alta-seller/D1.0.1.png);
+  background-image: url(../images/nerthan-ds/portada.jpg);
 }
 
 .sc-14 {
-  background-image: url(../images/checkout-mp/checkout.jpg);
+  background-image: url(../images/estrategia-vo/portada.jpg);
 }
 
 .sc-15 {
-  background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
+  background-image: url(../images/journey-app/portada.jpg);
 }
 
 .sc-16 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/journey-web/portada.jpg);
 }
 
 .sc-17 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/tab-ops/portada.jpg);
 }
 
 .sc-18 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/ganth/portada.png);
 }
 
 .sc-19 {
-  background-image: url(../images/alta-seller/D1.0.1.png);
+  background-image: url(../images/web-peruana/portada.jpg);
 }
 
 .sc-20 {
-  background-image: url(../images/checkout-mp/checkout.jpg);
+  background-image: url(../images/landing-mutante/portada.jpg);
 }
 
 .sc-21 {
-  background-image: url(../images/detalle-producto/D1LDPListaFiltros.png);
+  background-image: url(../images/cr-sistema/portada.jpg);
 }
 
 .sc-22 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/powerled/portada.jpg);
 }
 
 .sc-23 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/la-cuarta/portada.png);
 }
 
 .sc-24 {
-  background-image: url(../images/recuadros/working.jpg);
+  background-image: url(../images/koi/portada.png);
 }
 
 @font-face {
