@@ -5,7 +5,7 @@
     display: grid;
     color: $tipography-color;
     margin: 0 auto;
-    grid-gap: 2em;
+    grid-gap: 1em;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:repeat(2,400px);
     grid-template-areas: 
@@ -58,6 +58,9 @@
 .s-card{
     position: relative;
     background-size: cover;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4)  ; 
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4)  ; 
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4)  ; 
 }
 .sc-1{
     background-image: $s-1;

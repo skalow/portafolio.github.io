@@ -37,6 +37,7 @@
   grid-template-columns: 100%;
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 2em;
+  text-align: center;
   grid-template-areas: "img-1" "img-2";
   padding: 2em 0 2em 0;
 }
@@ -91,6 +92,10 @@
 
 .blog-footer p {
   padding: 50px 0 50px 0;
+}
+
+.t-mobil {
+  width: 30%;
 }
 
 .presentation {
@@ -149,7 +154,7 @@
   display: grid;
   color: #bbbbbb;
   margin: 0 auto;
-  grid-gap: 2em;
+  grid-gap: 1em;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 400px);
   grid-template-areas: "sa-1 sa-2 sa-3" "sa-4 sa-5 sa-6" "sa-7 sa-8 sa-9";
@@ -200,6 +205,9 @@
 .s-card {
   position: relative;
   background-size: cover;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .sc-1 {
@@ -255,7 +263,7 @@
 }
 
 .sc-14 {
-  background-image: url(../images/estrategia-vo/portada.jpg);
+  background-image: url(../images/estrategia-vo/portada.png);
 }
 
 .sc-15 {
@@ -670,7 +678,7 @@ header .special {
     grid-template-areas: "sa-1" "sa-2" "sa-3" "sa-4" "sa-5" "sa-6" "sa-7";
   }
 
-  .section-c {
+  .section {
     grid-template-columns: 100%;
     grid-template-rows: repeat(5, 400px);
     grid-template-areas: "sa-1" "sa-2" "sa-3" "sa-4" "sa-5";

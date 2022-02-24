@@ -32,6 +32,7 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 2em;
+    text-align: center;
     grid-template-areas: 
     "img-1"
     "img-2";
@@ -83,4 +84,8 @@
 }
 .blog-footer p{
     padding: 50px 0 50px 0;
+}
+
+.t-mobil{
+    width: 30%;
 }
