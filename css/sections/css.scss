@@ -20,8 +20,12 @@ body{
     color: $tipography-color;
 }
 
-.txt-center{
+.titulo-sect{
     text-align: center;
+    h1{
+        font-family: 'MuseoModerno', cursive;
+        color: $header-color-font-secondary;
+    }
 }
 .txt-size{
     font-family: "gotham-light";

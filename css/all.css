@@ -327,8 +327,12 @@ body {
   color: #bbbbbb;
 }
 
-.txt-center {
+.titulo-sect {
   text-align: center;
+}
+.titulo-sect h1 {
+  font-family: "MuseoModerno", cursive;
+  color: #444444;
 }
 
 .txt-size {
